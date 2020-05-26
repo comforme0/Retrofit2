@@ -11,7 +11,7 @@ interface APIServer {
     @GET("login")
 //    @FormUrlEncoded
     fun login(
-        @Query("userid") userid: EditText,   // POST는 @Field
-        @Query("pssswd") passwd: EditText
+        @Query("userid") userid: String,   // POST는 @Field
+        @Query("passwd") passwd: String
     ) : Call<LoginResponse>
 }
